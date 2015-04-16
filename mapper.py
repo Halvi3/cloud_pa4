@@ -13,8 +13,7 @@ def aboutsull(text):
 
 
 def positive(text):
-     #keywords = ['outrage', '#HoosforSullivan', 'support', 'great leader', 'great president', 'great President']
-     keywords = ['#HoosforSullivan']
+     keywords = ['outrage', '#HoosforSullivan', 'support', 'great leader', 'great president', 'great President']
      for k in keywords:
          if k in text:
              return True
