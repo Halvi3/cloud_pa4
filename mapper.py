@@ -56,7 +56,7 @@ with sys.stdin as f:
 
         tweet_text = data["text"]
 
-        if aboutdrag(tweet_text):
+        if anti(tweet_text):
            print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
 
         line = ""
