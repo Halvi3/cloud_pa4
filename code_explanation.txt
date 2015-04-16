@@ -1,0 +1,12 @@
+siva_map.py is the mapper code for Part 2 of this preliminary submission
+
+mapper.py is the mapper code for Part 1. I ran it multiple times, changing which function
+was called out in line 59 each time. The mapping between helper functions and graphs in my writeup
+are as follows:
+
+aboutsull -> Sullivan Tweets
+positive -> Positive Sullivan Ratio
+anti -> Negative Dragas Ratio
+aboutdrag -> Dragas Tweets
+
+For this submission, both parts used the same reducer.py
