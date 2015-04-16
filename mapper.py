@@ -54,7 +54,8 @@ with sys.stdin as f:
 
         tweet_text = data["text"]
 
-        if positive(tweet_text):
-            print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
+        if aboutsull(tweet_text):
+            if positive(tweet_text):
+                print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
 
         line = ""
