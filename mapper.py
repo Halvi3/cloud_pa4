@@ -6,7 +6,7 @@ import sys
 
 def aboutsull(text):
     keywords = ['Theresa', 'Sullivan', 'TSully', '@terrysulli', '#Sullivan', 'Terry', 'tsulls', 'Tsulls', 'terry',
-                'theresa', 'sullivan', 'tsully']
+                'theresa', 'sullivan', 'tsully', '#sullivan']
     for k in keywords:
         if k in text:
             return True
@@ -15,7 +15,7 @@ def aboutsull(text):
 
 def positive(text):
      keywords = ['outrage', '#HoosforSullivan', 'support', 'great leader', 'great president',
-                 'great President', 'Support']
+                 'great President', 'Support', '#hoosforsullivan', '#Hoosforsullivan', '#HoosForSullivan']
      for k in keywords:
          if k in text:
              return True
@@ -56,8 +56,7 @@ with sys.stdin as f:
 
         tweet_text = data["text"]
 
-        if aboutdrag(tweet_text):
-            if positive(tweet_text):
-                print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
+        if positive(tweet_text):
+           print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
 
         line = ""
