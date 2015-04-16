@@ -24,7 +24,7 @@ def anti(text):
     for k in keywords:
          if k in text:
              return True
-     return False
+    return False
 
 
 def aboutdrag(text):
@@ -32,7 +32,7 @@ def aboutdrag(text):
     for k in keywords:
          if k in text:
              return True
-     return False
+    return False
 
 
 with sys.stdin as f:
