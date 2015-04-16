@@ -22,7 +22,7 @@ def positive(text):
      return False
 
 def anti(text):
-    keywords = ['#DragasMustGo', '#SicSemperDragas', 'devil', 'tyrant', 'boo']
+    keywords = ['#DragasMustGo', '#SicSemperDragas', 'devil', 'tyrant', 'boo', 'resign', 'fire']
     for k in keywords:
          if k in text:
              return True
@@ -30,7 +30,7 @@ def anti(text):
 
 
 def aboutdrag(text):
-    keywords = ['Helen', 'Dragas', 'Rector', 'rector', 'helen', 'dragas']
+    keywords = ['Helen', 'Dragas', 'Rector', 'rector', 'helen', 'dragas', '#helendragas', '#HelenDragas']
     for k in keywords:
          if k in text:
              return True
@@ -56,7 +56,7 @@ with sys.stdin as f:
 
         tweet_text = data["text"]
 
-        if aboutsull(tweet_text):
+        if aboutdrag(tweet_text):
            print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
 
         line = ""
