@@ -14,12 +14,26 @@ def aboutsull(text):
 
 def positive(text):
      keywords = ['outrage', '#HoosforSullivan', 'support', 'great leader', 'great president', 'great President']
+     for k in keywords:
+         if k in text:
+             return True
+     return False
 
 def anti(text):
     keywords = ['#DragasMustGo', '#SicSemperDragas']
+    for k in keywords:
+         if k in text:
+             return True
+     return False
+
 
 def aboutdrag(text):
     keywords = ['Helen', 'Dragas', 'Rector', ]
+    for k in keywords:
+         if k in text:
+             return True
+     return False
+
 
 with sys.stdin as f:
     for line in f:
@@ -40,7 +54,7 @@ with sys.stdin as f:
 
         tweet_text = data["text"]
 
-        if aboutsull(tweet_text):
+        if positive(tweet_text):
             print '{0}\t{1}'.format(date_object.timetuple().tm_yday, 1)
 
         line = ""
