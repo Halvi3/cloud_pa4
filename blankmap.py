@@ -2,7 +2,6 @@
 
 import json
 import sys
-    keywords = ['Helen', 'Dragas', 'Rector', ]
 
 with sys.stdin as f:
     for line in f:
